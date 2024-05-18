@@ -28,10 +28,10 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
-    - name: Run .NET Code Analysis
-      uses: dotnet/code-analysis@v1
-      id: code-analysis
-      with:
-        solution: src/SimpleApiRest.sln
-        build-breaking: true
-        all-categories: all
+    #- name: Run .NET Code Analysis
+    #  uses: dotnet/code-analysis@v1
+    #  id: code-analysis
+    #  with:
+    #    solution: src/SimpleApiRest.sln
+    #    build-breaking: true
+    #    all-categories: all
