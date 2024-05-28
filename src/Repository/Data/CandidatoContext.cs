@@ -8,4 +8,5 @@ public class CandidatoContext : DbContext
 {
     public DbSet<Candidato> Candidatos;
     
+    
 }
