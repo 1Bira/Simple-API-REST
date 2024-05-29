@@ -1,6 +1,4 @@
-using System.Runtime.ConstrainedExecution;
-
-namespace ApplicationCore.Entities;
+namespace ApplicationCore.Entities.Unoffitial;
 
 public class Candidato
 {
@@ -8,33 +6,6 @@ public class Candidato
     public string? Email { get; set; }
     public string? NumeroTelemovel { get; set; }
 };
-
-public class Empresa
-{
-    public int Id { get; set; }
-    public string? Nome { get; set; }
-}
-
-public class Localidade
-{
-    public int Id { get; set; }
-    public string Endereco { get; set; }
-    public string Cidade { get; set; }
-    public string Pais { get; set; }
-    public string CodigoPostal { get; set; }
-}
-
-public class Vaga
-{
-    public int Id { get; set; }
-    public string? TItulo { get; set; }
-    public string? Descricao { get; set; }
-    public string? Requisitos { get; set; }
-    public DateTime DataCriacao { get; set; }
-
-    public Empresa? EmpresaVaga { get; set; }
-    public Localidade? LocalidadeVaga { get; set; }
-}
 
 public class Candidatura
 {

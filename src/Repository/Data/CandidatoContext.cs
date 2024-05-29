@@ -6,7 +6,6 @@ using ApplicationCore.Entities;
 
 public class CandidatoContext : DbContext
 {
-    public DbSet<Candidato> Candidatos;
-    
+    public DbSet<Candidato> Candidatos;    
     
 }
